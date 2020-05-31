@@ -1,0 +1,9 @@
+{
+  "orders": [{
+    "id": "1",
+    "productId": "BNB1"
+  }, {
+    "id": "2",
+    "productId": "BNB2"
+  }]
+}

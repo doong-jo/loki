@@ -3,6 +3,8 @@ API가 없거나 응답이 신뢰할 수 없는 상황에서 프론트엔드 개
 
 
 ## Concept
+![concept](https://user-images.githubusercontent.com/22005861/83355302-aa420a80-a399-11ea-885f-0a475628b8b7.jpeg)
+
 - miragejs는 API와 상관없이 프론트엔드 개발에 집중할 수 있도록 도와주는 라이브러리입니다. API, DB를 프론트엔드 내에서 직접 정의할 수 있으며 적은 코드로 API를 정의할 수 있습니다.
 - mapper: API 응답을 실제 화면/컴포넌트에서 필요한 형식으로 변환해주는 모듈
 

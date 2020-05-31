@@ -1,2 +1,2 @@
 # counter-api
-Against the api changes.
+Against the apis.

@@ -1,0 +1,14 @@
+{
+  "data": {
+    "lodgingProducts": [{
+      "id": "BNB1",
+      "lodgingName": "Roma lodging"
+    }, {
+      "id": "BNB2",
+      "lodgingName": "Italy lodging"
+    }, {
+      "id": "BNB3",
+      "lodgingName": "France lodging"
+    }]
+  }
+}

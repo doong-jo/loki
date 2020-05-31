@@ -1,4 +1,6 @@
 # counter-api
+[Korean, 한국어](https://github.com/doong-jo/counter-api/blob/master/README.ko.md)
+
 Against the apis.
 
 

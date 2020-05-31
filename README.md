@@ -9,6 +9,9 @@ Against the apis.
 2. Model each API and DB (json) based on the screen.
 3. Say goodbye to the backend and focus on front development.
 4. Once API development and specification creation (from the backend) are complete, API integration begins.
-    - Match the actual API response to the existing mock API response. → Use mapper.
+    - Match the actual API response to the existing mock API response. → [Use mapper](https://github.com/doong-jo/counter-api/tree/master/app/src/mapper).
     - When the API response is modified, only the mapper is modified.
     - If the API does not work, develop by running the existing mock api.
+
+
+`mapper: Module that converts API response from actual screen / component to the required format`

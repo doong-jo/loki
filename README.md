@@ -1,8 +1,7 @@
 # counter-api
-[Korean, 한국어](https://github.com/doong-jo/counter-api/blob/master/README.ko.md)
-
 Against the apis.
 
+[Korean, 한국어](https://github.com/doong-jo/counter-api/blob/master/README.ko.md)
 
 ## Concept
 - [miragejs](https://miragejs.com/) is a library that helps you focus on frontend development regardless of API. API and DB can be defined directly in the front end, and API can be defined with less code.

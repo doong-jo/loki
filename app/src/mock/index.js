@@ -3,7 +3,7 @@ import { Server, Model } from 'miragejs';
 import { productData, productRoutes } from './product';
 import { orderData, orderRoutes } from './order';
 
-const ProductServer = new Server({
+const MockServer = new Server({
   models: {
     product: Model,
     order: Model,
@@ -15,6 +15,6 @@ const ProductServer = new Server({
   },
 });
 
-ProductServer.db.loadData({ ...productData, ...orderData });
+MockServer.db.loadData({ ...productData, ...orderData });
 
-export default ProductServer;
+export default MockServer;

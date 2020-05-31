@@ -1,5 +1,5 @@
 # counter-api
-API에서 벗어나기.
+API로부터 벗어나기.
 
 
 ## Concept

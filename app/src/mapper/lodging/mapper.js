@@ -1,8 +1,9 @@
 function lodgingMapper(apiResponse) {
-  const products = apiResponse.data.lodgingProducts.map(
-    ({ id, lodgingName }) => ({
+  const products = apiResponse.data.preFetchedPopularProducts.map(
+    ({ id, title, salePrice }) => ({
       id,
-      name: lodgingName,
+      name: title,
+      price: `${salePrice.amount}${salePrice.suffix}`,
     }),
   );
 

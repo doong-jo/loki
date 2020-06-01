@@ -15,6 +15,10 @@ const MockServer = new Server({
   },
 });
 
+MockServer.passthrough('http://api3.dev-myrealtrip.com/**');
+MockServer.passthrough('http://api3.dev-myrealtrip.com/**/**');
+MockServer.passthrough('http://api3.dev-myrealtrip.com/**/**/**');
+MockServer.passthrough('http://api3.dev-myrealtrip.com/**/**/**/**');
 MockServer.db.loadData({ ...productData, ...orderData });
 
 export default MockServer;

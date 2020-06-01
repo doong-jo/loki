@@ -1,12 +1,15 @@
 {
   "products": [{
     "id": "BNB1",
-    "name": "Roma lodging"
+    "name": "Roma lodging",
+    "price": "100원"
   }, {
     "id": "BNB2",
-    "name": "Italy lodging"
+    "name": "Italy lodging",
+    "price": "200원"
   }, {
     "id": "BNB3",
-    "name": "France lodging"
+    "name": "France lodging",
+    "price": "300원"
   }]
 }

@@ -7,6 +7,8 @@ function route(server) {
     return schema.products.find(id);
   });
   server.get('/list', (schema) => schema.products.all());
+
+  server.get('/lodging-home', (schema) => schema.products.all());
 }
 
 export default route;

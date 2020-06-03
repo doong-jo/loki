@@ -15,15 +15,24 @@ class ApiConfig {
   }
 }
 
-export const apiConfig = new ApiConfig();
+const apiConfig = new ApiConfig();
 apiConfig.setMockUrl();
 
 export function ApiControllerView() {
   const [isMock, setIsMock] = useState(true);
   const [lodgingData, setLodgingData] = useState();
 
+  function setUrlMode(isMockMode) {
+    if (isMockMode) {
+      apiConfig.setMockUrl();
+    } else {
+      apiConfig.setRealUrl();
+    }
+  }
+
   useEffect(() => {
-    isMock ? apiConfig.setMockUrl() : apiConfig.setRealUrl();
+    setUrlMode(isMock);
+
     fetch(`${apiConfig.url}/lodging-home`)
       .then((res) => res.json())
       .then((json) => {

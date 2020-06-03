@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { apiConfig, ApiControllerView } from './ApiController';
+import { ApiControllerView } from './ApiController';
 
 function App() {
   const [product, setProduct] = useState();
@@ -57,6 +57,7 @@ function App() {
   return (
     <div style={{ marginLeft: '24px' }} className="App">
       <ApiControllerView />
+      <h1>API TEST</h1>
       <h2>GET /product/:id</h2>
       {product && (
         <ul>

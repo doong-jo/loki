@@ -1,11 +1,8 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 
-if (process.env.NODE_ENV === 'development') {
-  const MockServer = import('./mock');
-  MockServer.logging = true;
-}
+import App from './App';
+import MockServer from './mock';
 
 ReactDOM.render(
   <React.StrictMode>

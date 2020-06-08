@@ -1,0 +1,25 @@
+#counter-api-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: white;
+  border: 1px solid black;
+  height: 100%;
+  overflow-y: auto;
+  width: 256px;
+}
+
+.hidden {
+  width: 24px !important;
+}
+
+.visible {
+  width: 256px !important;
+}
+
+#counter-api-list {
+  width: 100%;
+  min-height: 100px;
+  background: lightblue;
+  padding: 24px 10px 10px 24px;
+}

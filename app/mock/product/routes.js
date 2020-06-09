@@ -1,5 +1,5 @@
 function route(server) {
-  server.namespace = 'product';
+  server.namespace = '/mock/product';
 
   server.get('/:id', (schema, request) => {
     const id = request.params.id;

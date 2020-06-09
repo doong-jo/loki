@@ -1,5 +1,5 @@
 function route(server) {
-  server.namespace = 'order';
+  server.namespace = 'mock/order';
 
   server.get('/:id', (schema, request) => {
     const id = request.params.id;

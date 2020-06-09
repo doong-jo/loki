@@ -1,0 +1,39 @@
+#counter-api-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: white;
+  border: 1px solid black;
+  height: 100%;
+  overflow-y: auto;
+  width: 256px;
+  box-shadow: -4px 0px 6px 1px #ababab;
+  transition: width 0.3s;
+  overflow: hidden;
+}
+
+#counter-api-list {
+  width: 208px;
+  padding: 20px 24px 20px 24px;
+}
+
+.hidden {
+  width: 24px !important;
+}
+
+.visible {
+  width: 256px !important;
+}
+
+.sidebar-button {
+  background: none;
+  border: 0;
+}
+
+.sidebar-button:active {
+  transform: translateY(1px);
+}
+
+.sidebar-button:focus {
+  outline: none;
+}

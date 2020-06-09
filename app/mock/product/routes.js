@@ -1,3 +1,5 @@
+import flexRoute from '../flexRoute';
+
 function route(server) {
   server.namespace = '/mock/product';
 
@@ -8,7 +10,9 @@ function route(server) {
   });
   server.get('/list', (schema) => schema.products.all());
 
-  server.get('/lodging-home', (schema) => schema.products.all());
+  flexRoute(server, '/lodging-home', (schema) => {
+    return schema.products.all();
+  });
 }
 
 export default route;

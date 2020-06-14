@@ -1,19 +1,27 @@
-import { getRouteStatus, registerRoute } from './board/apiManager';
+function flexRoute({ method, path, routeCallback }, apiConfig) {
+  function commit(server) {
+    const servicePath = server.namespace.split('/mock').pop();
 
-function flexRoute(server, path, routeCallback) {
-  const fullPath = `${server.namespace}${path}`;
-  registerRoute(fullPath);
+    server[method](path, (schema, request) => {
+      const { code } = apiConfig.getApiStatus({
+        method,
+        path: `${servicePath}${path}`,
+      });
 
-  const interceptCallback = () => {
-    const status = getRouteStatus(fullPath);
-    if (status !== 200) {
-      return () => status;
-    }
+      if (code !== undefined && code !== 200) {
+        return { code };
+      }
+      return routeCallback(schema, request);
+    });
 
-    return routeCallback;
-  };
+    apiConfig.registerApiPath({
+      isMock: true,
+      method,
+      path: `${servicePath}${path}`,
+    });
+  }
 
-  server.get(path, interceptCallback());
+  return commit;
 }
 
 export default flexRoute;

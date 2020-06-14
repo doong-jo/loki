@@ -6,15 +6,15 @@
   border: 1px solid black;
   height: 100%;
   overflow-y: auto;
-  width: 256px;
+  width: 360px;
   box-shadow: -4px 0px 6px 1px #ababab;
   transition: width 0.3s;
   overflow: hidden;
 }
 
 #counter-api-list {
-  width: 208px;
-  padding: 20px 24px 20px 24px;
+  width: 300px;
+  padding: 4px 24px 20px 24px;
 }
 
 .hidden {
@@ -22,12 +22,19 @@
 }
 
 .visible {
-  width: 256px !important;
+  width: 360px !important;
+}
+
+.hidden button {
+  transform: rotate(180deg);
 }
 
 .sidebar-button {
   background: none;
   border: 0;
+  height: 100%;
+  float: left;
+  transition: transform 0.5s;
 }
 
 .sidebar-button:active {
@@ -36,4 +43,21 @@
 
 .sidebar-button:focus {
   outline: none;
+}
+
+.api {
+  padding: 8px;
+  border-left: 1px solid #909090;
+  box-shadow: 3px 3px 2px 0px #ddd;
+  word-break: break-all;
+  margin-bottom: 10px;
+}
+
+.api>ul {
+  margin: 0;
+  padding-inline-start: 20px;
+}
+
+.api input[type=checkbox] {
+  margin-left: 3px;
 }

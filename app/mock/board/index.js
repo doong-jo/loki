@@ -3,12 +3,11 @@ import SideBar from './sidebar';
 
 class Board {
   constructor() {
-    this.sidebar = null;
+    this.sidebar = new SideBar();
   }
 
-  initialize() {
-    this.sidebar = new SideBar().initialize();
-    this.sidebar.toggle('hidden');
+  initialize(apiPathes) {
+    this.sidebar.initialize('visible', apiPathes);
 
     const body = document.querySelector('body');
     body.appendChild(this.sidebar.getView());

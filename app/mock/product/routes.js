@@ -1,18 +1,29 @@
 import flexRoute from '../flexRoute';
 
-function route(server) {
+function route(server, apiConfig) {
   server.namespace = '/mock/product';
 
-  server.get('/:id', (schema, request) => {
-    const id = request.params.id;
+  flexRoute(
+    {
+      method: 'get',
+      path: '/products/:id',
+      routeCallback: (schema, request) => {
+        const id = request.params.id;
 
-    return schema.products.find(id);
-  });
-  server.get('/list', (schema) => schema.products.all());
+        return schema.products.find(id);
+      },
+    },
+    apiConfig,
+  )(server);
 
-  flexRoute(server, '/lodging-home', (schema) => {
-    return schema.products.all();
-  });
+  flexRoute(
+    {
+      method: 'get',
+      path: '/lodging-home',
+      routeCallback: (schema) => schema.products.all(),
+    },
+    apiConfig,
+  )(server);
 }
 
 export default route;

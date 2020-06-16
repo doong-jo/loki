@@ -6,9 +6,8 @@ A repository that implements a sustainable way for frontend development in the a
 ## Concept
 ![concept](https://user-images.githubusercontent.com/22005861/83355302-aa420a80-a399-11ea-885f-0a475628b8b7.jpeg)
 
->
-- [miragejs](https://miragejs.com/) is a library that helps you focus on frontend development regardless of API. API and DB can be defined directly in the front end, and API can be defined with less code.
-- mapper: Module that converts API response from actual screen / component to the required format
+>- [miragejs](https://miragejs.com/) is a library that helps you focus on frontend development regardless of API. API and DB can be defined directly in the front end, and API can be defined with less code.
+>- mapper: Module that converts API response from actual screen / component to the required format
 
 1. Use miragejs to run a mock api (not a real server) running on the client-side.
 2. Model each API and DB (json) based on the screen.

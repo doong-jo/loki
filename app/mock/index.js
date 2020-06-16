@@ -1,7 +1,9 @@
 import { Server, Model } from 'miragejs';
 
+import { productData, routeProduct } from './product';
 import board from './board';
 import apiConfig from './apiConfig';
+import flexRouter from './flexRouter';
 
 const MockServer = new Server({
   models: {
@@ -9,7 +11,10 @@ const MockServer = new Server({
   },
 
   routes() {
-    productRoutes(this, apiConfig);
+    this.namespace = `/mock`;
+    flexRouter.initialize(this);
+
+    routeProduct();
   },
 });
 

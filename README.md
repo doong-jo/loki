@@ -13,6 +13,6 @@ A repository that implements a sustainable way for frontend development in the a
 2. Model each API and DB (json) based on the screen.
 3. Say goodbye to the backend and focus on front development.
 4. Once API development and specification creation (from the API server) are complete, API integration begins.
-    - Match the actual API response to the existing mock API response. → [Use mapper](https://github.com/doong-jo/counter-api/tree/master/app/src/mapper).
+    - Match the actual API response to the existing mock API response. → "Use mapper (implemented by the developer)"
     - When the API response is modified, only the mapper is modified.
     - If the API does not work, develop by running the existing mock api.

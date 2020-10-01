@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div>
-      <h1>COUNTER-API</h1>
+      <h1>LOKI</h1>
       <h2>/product/products/:id</h2>
       <button
         onClick={() => {

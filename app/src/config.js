@@ -8,7 +8,7 @@ const configs = {
         : window.mockApis[method][path];
     }
 
-    return `http://api3.dev-myrealtrip.com${directPath || path}`;
+    return `${process.env.REACT_APP_API_DOMAIN}${directPath || path}`;
   },
 };
 

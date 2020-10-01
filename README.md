@@ -3,6 +3,8 @@
 
 A repository that implements a sustainable way for frontend development in the absence of API or unreliable response.
 
+![intro](https://user-images.githubusercontent.com/22005861/94770280-2eaba500-03ef-11eb-9405-69b47a1e91f1.gif)
+
 ## Concept
 ![concept](https://user-images.githubusercontent.com/22005861/83355302-aa420a80-a399-11ea-885f-0a475628b8b7.jpeg)
 

@@ -16,4 +16,5 @@ class Board {
   }
 }
 
-export default Board;
+const board = new Board();
+export default board;

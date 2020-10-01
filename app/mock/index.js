@@ -1,8 +1,9 @@
 import { Server, Model } from 'miragejs';
 
-import { productData, productRoutes } from './product';
-import Board from './board';
+import { productData, routeProduct } from './product';
+import board from './board';
 import apiConfig from './apiConfig';
+import flexRouter from './flexRouter';
 
 const MockServer = new Server({
   models: {
@@ -10,7 +11,10 @@ const MockServer = new Server({
   },
 
   routes() {
-    productRoutes(this, apiConfig);
+    this.namespace = `/mock`;
+    flexRouter.initialize(this);
+
+    routeProduct();
   },
 });
 
@@ -20,6 +24,6 @@ MockServer.passthrough('http://api3.dev-myrealtrip.com/**/**/**');
 MockServer.passthrough('http://api3.dev-myrealtrip.com/**/**/**/**');
 MockServer.db.loadData({ ...productData });
 
-new Board().initialize(apiConfig.getApiPathes());
+board.initialize(apiConfig.getApiPathes());
 
 export default MockServer;

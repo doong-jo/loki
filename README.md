@@ -1,4 +1,6 @@
 # loki
+> [API없이 프론트엔드 개발하기](https://medium.com/@sdong001_28201/api-%EC%97%86%EC%9D%B4-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0-89fdabceaa19)
+
 [Korean / 한국어](https://github.com/doong-jo/loki/blob/master/README.ko.md)
 
 A repository that implements a sustainable way for frontend development in the absence of API or unreliable response.
